@@ -64,7 +64,7 @@ nav li:first-child{
   position: fixed;
   top: 0;
   right: 0;
-  height: 100hv;
+  height: 100%;
   width: 250px;
   z-index: 999;
   background-color: #0f2596;
@@ -169,7 +169,7 @@ nav li:first-child{
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content:space-around;
   align-items: flex-start;
   gap: 10px;
 }
@@ -181,9 +181,7 @@ nav li:first-child{
   padding: 10px;
   width: 125px;
   margin-top: 80px;
-  margin-left: 200px;
   transform: skew(-15deg);
-  z-index: 99;
 }
 
 
@@ -199,10 +197,9 @@ nav li:first-child{
   padding: 10px;
   width: 125px;
   margin-top: 80px;
-  margin-left: 200px;
   transform: skew(-15deg);
    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   z-index: 99;
+   z-index: 2;
 }
 
 .yellow-button:hover {
@@ -221,9 +218,17 @@ nav li:first-child{
   .hideOnMobile{
     display: none;
   }
+
+  .main-logo {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .yellow-button, .red-button {
+    z-index: 1;
+  }
 }
 
-@media(max-width: 500px){
+@media(max-width: 1100px){
   .sidebar{
     width: 100%;
   }
@@ -231,20 +236,28 @@ nav li:first-child{
     font-size: 10px;
   }
   .portugal-bg {
+    width: 3000px;
+    overflow: hidden;
+  }
+  .ronaldo {
+    width: 350px;
+  }
+  
+
+ 
+
+  .side{
     display: none;
   }
-  .italy-bg {
-    display: none;
-  }
-  .gradient-bg {
+  .side_logo{
     display: none;
   }
 
-  .side{
-    transform: skew(0);
-  }
-  .side_logo{
-    transform: skew(0);
+  .main-logo {
+    
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
   }
 
   .screen {
@@ -252,6 +265,12 @@ nav li:first-child{
   justify-content:center;
   align-items: flex-start;
 
+  }
+
+  .buttons{
+    gap: 100px;
+    margin-left: 0px;
+    justify-content: space-between;
   }
 }
 
