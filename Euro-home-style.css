@@ -222,6 +222,7 @@ nav li:first-child{
   .main-logo {
     width: 300px;
     margin-left: 40px;
+    padding-top: 85px;
   }
   .yellow-button, .red-button {
     z-index: 1;
