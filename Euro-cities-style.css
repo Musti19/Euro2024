@@ -1,0 +1,246 @@
+a {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  
+}
+
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #143cda;
+}
+
+body {
+ 
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+nav{
+  position: relative;
+  background-color: #143cda;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  z-index: 2;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 60px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover{
+  background-color: #081fb9;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.nav_logo {
+  margin: 3px;
+  width: 75px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100hv;
+  width: 250px;
+  z-index: 999;
+  background-color: #0f2596;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+
+.item {
+  width: 550px;
+  height: 300px;
+  background-color: red;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:700;
+  position: relative;
+  transition: height 0.1s ease-in;
+  transition: width 0.1s ease-in;
+}
+ .item:hover  {
+  cursor:pointer;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.336);
+  border: 2px solid rgb(255, 255, 255);
+}
+.item:active {
+  opacity: 0.7;
+}
+
+
+.container {
+  display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    gap: 100px;
+    margin: 0px auto;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 80px;
+    place-items: center;
+    margin-bottom: 80px;
+    
+}
+
+.city-name {
+  font-size: 35px;
+  margin: 0;
+  padding: 15px;
+  
+}
+
+
+.city-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+} 
+
+.stadium-icon {
+  width: 350px;
+}
+
+
+.bg-colours, .bg-colours2 {
+  position: absolute;
+  display: flex;
+  height: 800px;
+  gap: 3px;
+  
+  overflow: hidden;
+  z-index: -10;
+}
+.bg-colours {
+  transform: rotate(45deg);
+  top: -200px;
+}
+.bg-colours2 {
+  transform: rotate(135deg);
+  right: 0%;
+  top: -200px;
+}
+
+.first-colour {
+  background-color: #e30315;
+  height: 100%;
+  width: 35px;
+}
+.second-colour {
+  background-color: #00bf63;
+  height: 100%;
+  width: 35px;
+}.third-colour {
+  background-color:  #0f2596;
+  height: 100%;
+  width: 35px;
+}
+.fourth-colour {
+  background-color: #ffd500;
+  height: 100%;
+  width: 35px;
+}
+.fifth-colour {
+  background-color: #ffffff;
+  height: 100%;
+  width: 35px;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+}
+@media(max-width:1170px) {
+  .item {
+    width: 300px;
+    height: 150px; 
+  }
+
+  .stadium-icon {
+    width: 150px;
+  }
+
+  .city-name {
+    font-size: 25px;    
+  }
+
+  .bg-colours, .bg-colours2 {
+    display: none;
+  }
+}
+
+@media(max-width:500px) {
+  .item {
+    width: 175px;
+    height: 115px; 
+  }
+
+  .stadium-icon {
+    width: 115px;
+  }
+
+  .city-name {
+    font-size: 15px;    
+  }
+
+  .bg-colours, .bg-colours2 {
+    display: none;
+  }
+
+  .container {
+    gap: 50px;
+  }
+}

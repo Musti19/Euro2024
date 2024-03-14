@@ -1,0 +1,320 @@
+a {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  
+}
+
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+html {
+  background-color: #143cda;
+}
+
+body {
+ 
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-bottom: 80px;
+}
+
+nav{
+  position: relative;
+  background-color: #143cda;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  z-index: 2;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 60px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover{
+  background-color: #081fb9;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.nav_logo {
+  margin: 3px;
+  width: 75px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100hv;
+  width: 250px;
+  z-index: 999;
+  background-color: #0f2596;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+
+
+.title {
+  height: 399px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.title-left {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 35px;
+}
+
+.title-top {
+  font-weight: lighter;
+  font-size: 30px;
+  color: white;
+}
+.title-bottom {
+  font-size: 75px;
+  font-weight: bold;
+  color: white;
+}
+
+.city-image-div {
+  display: flex;
+  position: absolute;
+  right: 0%;
+  align-items: center;
+  height: 100%;
+}
+.city-image {
+  width: 599px;
+}
+
+.bg-div {
+  position: absolute;
+  right: 35%;
+  z-index: 1;
+}
+.bg-image {
+  width: 395px;
+}
+
+.map-side {
+  
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-text {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
+
+}
+
+.stadium-map-image {
+  width: 950px;
+}
+
+.city-title {
+  padding-top: 65px;
+  padding-left: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+  
+} 
+
+.city-div {
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 25px;
+  padding-bottom: 50px;
+}
+
+.city-text {
+  width: 80%;
+  padding: 50px;
+
+}
+
+.city-text-image {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.matches-map {
+  color: white;
+  display: flex;
+    flex-direction: row;
+    padding: 1em 1em 1.5em;
+    gap: 1em;
+    border-radius: 0.3em;
+}
+
+.match {
+    height: 150px;
+    width: 700px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0025b9;
+    font-size: 25px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.336);
+    margin-top: 10px;
+}
+
+.vs-style {
+  font-size: 20px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.match-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.flag {
+  border-radius: 15%;
+  width: 30px;
+}
+
+#text-img {
+  width: 400px;
+}
+
+
+
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .hideOnMobile{
+    display: none;
+  }
+
+  .title-right {
+    display: none;
+  }
+
+  .title-top {
+    font-weight: lighter;
+    font-size: 35px;
+  }
+  .title-bottom {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .title {
+    height: 200px;
+    justify-content: center;
+  }
+
+  .city-text {
+    font-size: 20px;
+  }
+
+  .city-title {
+    font-size: 35px;
+  }
+
+ 
+  #text-img {
+    width: 250px;
+  }
+
+  .matches-map {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match {
+    height: 125px;
+    width: 650px;
+  }
+}
+
+@media(max-width: 500px){
+  .city-text {
+    font-size: 15px;
+  }
+
+  .city-title {
+    font-size: 35px;
+  }
+
+ 
+  #text-img {
+    width: 150px;
+    border-width: 1px;
+  }
+
+  .matches-map {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .match {
+    height: 125px;
+    width: 375px;
+  }
+}
