@@ -279,6 +279,8 @@ button:active {
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
     font-size: 20px;
   }
+
+  
 }
 
 @media(max-width:902px) {
@@ -286,8 +288,13 @@ button:active {
   .all-groups {
     display: grid;
     grid-template-columns: repeat(1, 80vw);
+  }
+
+    .bg-colours, .bg-colours2 {
+      display: none;
+    }
 }
-}
+
 
 @media(max-width: 800px){
   .hideOnMobile{

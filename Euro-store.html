@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EURO 2024 - Store</title>
+  <link rel="stylesheet" href="Euro-store-style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Euro-countries.html">Countries</a></li>
+      <li><a href="Euro-predictor.html">Predictor</a></li>
+      <li><a href="Euro-cities.html">Host Cities</a></li>
+      <li><a href="Euro-store.html">Store</a></li>
+      
+    </ul>
+    <ul>
+      <li><img class="nav_logo" src="../Euro2024/images/euro-2024-logo-removebg-preview.png" alt=""></li>
+      
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="Euro-countries.html">Countries</a></li>
+      <li class="hideOnMobile"><a href="Euro-predictor.html">Predictor</a></li>
+      <li class="hideOnMobile"><a href="Euro-store.html">Store</a></li>
+      <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+
+ 
+  <div class="container">
+
+    
+    <div class="header">
+      <a href="#title-one">  <img class="header-img" src="../Euro2024/kits/header-photo.avif" alt="">
+      </a>
+    </div>
+
+
+    <div class="title-one" id="title-one">
+      <p class="title-one-text">KITS</p>
+    </div>
+    
+    <div class="all-kits" id="all-kits">
+      <div class="kits">
+        <div class="kit-image">
+          <img class="kit-img" src="../Euro2024/kits/germany-kit.jpg" alt="">
+        </div>
+        <div class="kit-text">
+          <p class="kit-txt">
+            GERMANY
+          </p>
+          <a href="Euro-germany.html">
+            <button>SHOP NOW</button>
+          </a>
+        </div>
+        
+      </div>
+      <div class="kits">
+        <div class="kit-image">
+          <img class="kit-img" src="../Euro2024/kits/france-kit.jpg" alt="">
+        </div>
+        <div class="kit-text">
+          <p class="kit-txt">
+            FRANCE
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+        
+      </div>
+      <div class="kits">
+        <div class="kit-image">
+          <img class="kit-img" src="../Euro2024/kits/spain-kit.jpg" alt="">
+        </div>
+        <div class="kit-text">
+          <p class="kit-txt">
+            SPAIN
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+        
+      </div>
+      <div class="kits">
+        <div class="kit-image">
+          <img class="kit-img" src="../Euro2024/kits/portugal-kit.jpg" alt="">
+        </div>
+        <div class="kit-text">
+          <p class="kit-txt">
+            PORTUGAL
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+       
+      </div>
+      <div class="kits">
+        <div class="kit-image">
+          <img class="kit-img" src="../Euro2024/kits/england-kit.jpg" alt="">
+        </div>
+        <div class="kit-text">
+          <p class="kit-txt">
+            ENGLAND
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+        
+      </div>
+      <div class="kits">
+        <div class="kit-image">
+          <img class="kit-img" src="../Euro2024/kits/belgium-kit.jpg" alt="">
+        </div>
+        <div class="kit-text">
+          <p class="kit-txt">
+            BELGIUM
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <script>
+    function showSidebar(){
+      const sidebar= document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar= document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+</html>

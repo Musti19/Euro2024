@@ -258,3 +258,9 @@ nav li:first-child{
   
 }
 
+@media(max-width: 1000px){
+  .bg-colours .bg-colours2 {
+    display: none;
+  }
+}
+

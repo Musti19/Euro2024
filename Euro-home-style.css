@@ -173,6 +173,7 @@ nav li:first-child{
   justify-content:space-around;
   align-items: flex-start;
   gap: 10px;
+ 
 }
 .red-button {
   
@@ -183,6 +184,7 @@ nav li:first-child{
   width: 125px;
   margin-top: 80px;
   transform: skew(-15deg);
+  z-index: 1;
 }
 
 
@@ -200,7 +202,8 @@ nav li:first-child{
   margin-top: 80px;
   transform: skew(-15deg);
    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   z-index: 2;
+   z-index: 1;
+   
 }
 
 .yellow-button:hover {

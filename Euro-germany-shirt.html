@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EURO 2024 - Germany Shirt</title>
+  <link rel="stylesheet" href="Euro-germany-shirt-style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Euro-countries.html">Countries</a></li>
+      <li><a href="Euro-predictor.html">Predictor</a></li>
+      <li><a href="Euro-cities.html">Host Cities</a></li>
+      <li><a href="Euro-store.html">Store</a></li>
+      
+    </ul>
+    <ul>
+      <li><img class="nav_logo" src="../Euro2024/images/euro-2024-logo-removebg-preview.png" alt=""></li>
+      
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="Euro-countries.html">Countries</a></li>
+      <li class="hideOnMobile"><a href="Euro-predictor.html">Predictor</a></li>
+      <li class="hideOnMobile"><a href="Euro-store.html">Store</a></li>
+      <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+
+ 
+  <div class="container">
+
+
+    <div class="bg-colours">
+      <div class="first-colour"></div>
+      <div class="second-colour"></div>
+      <div class="third-colour"></div>
+      <div class="fourth-colour"></div>
+      <div class="fifth-colour"></div>
+      
+    </div>
+    <div class="bg-colours2">
+      <div class="first-colour"></div>
+      <div class="second-colour"></div>
+      <div class="third-colour"></div>
+      <div class="fourth-colour"></div>
+      <div class="fifth-colour"></div>
+      
+    </div>
+
+
+    <div class="main-div">
+      <div class="left-side">
+        <img class="shirt-image" src="../Euro2024/kits/germany-shirt.png" alt="">
+      </div>
+      <div class="right-side">
+        <p class="right-title">Germany Home Shirt</p>
+        <p class="right-price">Price: €94</p>
+      
+        
+         <div class="buttons">
+              <button class="button">XS</button>
+              <button class="button">S</button>
+              <button class="button">M</button>
+              <button class="button">L</button>
+              <button class="button">XL</button>
+              <button class="button">2XL</button>
+          </div>
+
+          <div class="bottom-right">
+            <div class="dropdown">
+              <button class="btn">Quantity</button>
+              <ul class="list">
+                <li class="item">1</li>
+                <li class="item">2</li>
+                <li class="item">3</li>
+                <li class="item">4</li>
+                <li class="item">5</li>
+              </ul>
+            </div>
+
+            <div class="cart-button-div">
+              <button class="cart-button">Add To Cart</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <script>
+    function showSidebar(){
+      const sidebar= document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar= document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+
+    let btn = document.querySelector(".btn")
+    let list = document.querySelector(".list")
+    btn.addEventListener("click", () => {
+      list.classList.toggle("newlist")
+    })
+
+    // Select the button and list elements
+
+
+
+
+// Update price based on quantity
+list.querySelectorAll(".item").forEach(item => {
+  item.addEventListener("click", () => {
+    // Set the button text to the selected item's text
+    btn.textContent = item.textContent;
+    // Update price based on quantity
+    let quantity = parseInt(item.textContent);
+    let basePrice = 94; // Base price for Germany Home Shirt
+    let totalPrice = basePrice * quantity;
+    let priceDisplay = document.querySelector(".right-price");
+    priceDisplay.textContent = "Price: €" + totalPrice;
+    // Hide the list
+    list.classList.remove("show");
+  });
+});
+
+// Select the size buttons
+let sizeButtons = document.querySelectorAll(".button");
+
+// Add event listener to each size button
+sizeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Remove the 'selected' class from all size buttons
+    sizeButtons.forEach(btn => {
+      btn.classList.remove("selected");
+    });
+    // Add the 'selected' class to the clicked size button
+    button.classList.add("selected");
+  });
+})
+  </script>
+</body>
+</html>

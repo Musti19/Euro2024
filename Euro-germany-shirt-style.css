@@ -1,0 +1,281 @@
+a {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  
+}
+
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #143cda;
+}
+
+body {
+ 
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+
+nav{
+  position: relative;
+  background-color: #143cda;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  z-index: 2;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 60px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover{
+  background-color: #081fb9;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.nav_logo {
+  margin: 3px;
+  width: 75px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100hv;
+  width: 250px;
+  z-index: 999;
+  background-color: #0f2596;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+
+
+
+.bg-colours, .bg-colours2 {
+  position: absolute;
+  display: flex;
+  height: 800px;
+  gap: 3px;
+  
+  overflow: hidden;
+  z-index: -10;
+}
+.bg-colours {
+  transform: rotate(45deg);
+  top: -200px;
+}
+.bg-colours2 {
+  transform: rotate(135deg);
+  right: 0%;
+  top: -200px;
+}
+
+.first-colour {
+  background-color: black;
+  height: 100%;
+  width: 35px;
+}
+.second-colour {
+  background-color: red;
+  height: 100%;
+  width: 35px;
+}.third-colour {
+  background-color:  yellow;
+  height: 100%;
+  width: 35px;
+}
+
+.left-side {
+  top: 250px;
+}
+
+
+.shirt-image {
+  width: 650px;
+}
+
+.right-title {
+  font-size: 40px;
+}
+.right-price {
+  font-size: 20px;
+}
+
+.right-side {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-div {
+  display: flex;
+  position: relative;
+  top: 250px;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  color:#081fb9;
+  background-color: white;
+  border: 4px solid #081fb9;
+  font-weight: bold;
+  cursor: pointer;
+}
+.selected {
+  color:white;
+  background-color: #081fb9;
+  border: 4px solid white;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+} 
+
+.item {
+  list-style: none;
+
+}
+
+.dropdown {
+  
+  width: 200px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px;
+  color:#081fb9;
+  background-color: white;
+  border: 4px solid #081fb9;
+  width: 120px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.list {
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: .3s;
+  text-align: center;
+  width: 120px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f2596;
+  border: 1px solid white;
+}
+
+.list li {
+  padding: 10px;
+}
+
+.list li:hover {
+  opacity: 0.7;
+}
+
+.newlist {
+  transform: scaleY(1);
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.cart-button {
+  padding: 10px;
+  width: 250px;
+  height: 60px;
+  border: 4px solid #081fb9;
+  color: #081fb9;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5%;
+}
+.cart-button:hover {
+  opacity: 0.9;
+}
+.cart-button:active {
+  opacity: 0.7;
+}
+
+
+@media(max-width: 900px){
+  .hideOnMobile{
+    display: none;
+  }
+}
+
+@media(max-width: 500px){
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+  }
+
+  .shirt-image {
+    width: 350px;
+  }
+  .bg-colours, .bg-colours2 {
+    display: none;
+  }
+  .bottom-right {
+    flex-direction: column;
+  }
+  .dropdown {
+    margin-bottom: 20px;
+  }
+
+}
